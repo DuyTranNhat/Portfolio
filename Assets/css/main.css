@@ -55,11 +55,16 @@ body {
 .profile__info-title {
     letter-spacing: 3px;
     font-weight: 600;
+
 }
-/*
-.profile-skill li {
-    list-style-type: ;
-}*/
+
+img.avatar {
+  object-fit: cover;
+  height: auto;
+  width: 160px;
+  object-position: center;
+}
+
 
 .bg-profile {
     background-color: #f0efef;
@@ -77,3 +82,47 @@ body {
 .item-descrip {
     margin-left: -16px;
 }
+
+.profile-item .title-section {
+  justify-content: center;
+}
+
+.profile-item__body {
+  text-align: center;
+}
+
+.display-lg {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  img.avatar {
+    width: 50%;
+  } 
+}
+
+@media (min-width: 992px) {
+  .text-start {
+    align-items: flex-start;
+  }
+
+  .profile-item .title-section {
+      justify-content: start;
+  }
+  .profile-item__body {
+    text-align: start;
+  }
+
+  .justify-content-center-lg {
+    justify-content: start !important;
+  }
+
+  .display-lg {
+    display: block;
+  }
+
+  .display-tablet {
+    display: none;
+  }
+}
+
